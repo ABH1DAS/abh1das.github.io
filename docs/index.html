@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CivEase</title>
+    <!-- Tailwind CDN for quick styling (optional) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <span class="text-white">💬</span>
+            </div>
+            <h1 class="text-xl font-bold text-gray-900">CivEase</h1>
+          </div>
+          <nav class="flex gap-4">
+            <a href="/citizen/login" class="border border-gray-300 rounded px-3 py-1">Citizen Login</a>
+            <a href="/authority/login" class="bg-blue-600 text-white rounded px-3 py-1">Authority Login</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Bridging Citizens and Government</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          CivEase makes it simple for citizens to report issues and for authorities to manage them efficiently. Building stronger communities through better communication.
+        </p>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="rounded-lg border-2 border-blue-100 hover:border-blue-200 transition-colors bg-white shadow-sm">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <span class="text-blue-600">👥</span>
+            </div>
+            <h3 class="text-2xl text-blue-900 font-semibold">For Citizens</h3>
+            <p class="text-lg text-gray-700 mb-4">Report issues, track progress, and engage with your local government</p>
+            <ul class="space-y-3 text-gray-600 mb-6">
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-blue-500 rounded-full"></div>Easy issue reporting with photos</li>
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-blue-500 rounded-full"></div>Real-time status updates</li>
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-blue-500 rounded-full"></div>Community engagement features</li>
+            </ul>
+            <a href="/citizen/register" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded">Get Started as Citizen</a>
+          </div>
+        </div>
+
+        <div class="rounded-lg border-2 border-green-100 hover:border-green-200 transition-colors bg-white shadow-sm">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <span class="text-green-600">🛡️</span>
+            </div>
+            <h3 class="text-2xl text-green-900 font-semibold">For Authorities</h3>
+            <p class="text-lg text-gray-700 mb-4">Manage reports, track performance, and serve your community better</p>
+            <ul class="space-y-3 text-gray-600 mb-6">
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-green-500 rounded-full"></div>Comprehensive dashboard</li>
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-green-500 rounded-full"></div>Analytics and reporting</li>
+              <li class="flex items-center gap-2"><div class="w-2 h-2 bg-green-500 rounded-full"></div>Efficient case management</li>
+            </ul>
+            <a href="/authority/login" class="block w-full text-center bg-green-600 text-white px-4 py-2 rounded">Access Authority Portal</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-blue-600 mb-2">1,247</div>
+            <div class="text-gray-600">Issues Resolved</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-green-600 mb-2">89%</div>
+            <div class="text-gray-600">Satisfaction Rate</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-purple-600 mb-2">24h</div>
+            <div class="text-gray-600">Avg Response Time</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
