@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "test": "echo \"No tests defined\" && exit 0"
+    "lint": "next lint",
+    "test": "echo \"No tests defined\" && exit 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@highlight-run/next": "^7.9.38",

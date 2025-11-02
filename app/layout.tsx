@@ -14,11 +14,20 @@ export const metadata: Metadata = {
 
 }
 
+'use client';
+
+import { useEffect } from 'react';
+import { initializeStorage } from '@/lib/client-storage';
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  useEffect(() => {
+    initializeStorage();
+  }, []);
+
   return (
     <>
       <HighlightInit
