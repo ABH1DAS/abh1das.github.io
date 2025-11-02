@@ -170,4 +170,26 @@ export default function ReportIssuePage() {
               {error && (
                 <Alert variant="destructive">
                   <AlertDescription>{error}</AlertDescription>
-                </A
+                </Alert>
+              )}
+
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Submitting...
+                  </>
+                ) : (
+                  <>
+                    <Send className="mr-2 h-4 w-4" />
+                    Submit Report
+                  </>
+                )}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </main>
+    </div>
+  )
+}
